@@ -7,13 +7,20 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <h1>To-Do List</h1>
-    <input type="text" id="taskInput" placeholder="Add a new task...">
-    <button onclick="addTask()">Add Task</button>
-    <ul id="taskList">
-    </ul>
-</div>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="add-task">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="tabs">
+            <button class="tab" onclick="showAllTasks()">All</button>
+            <button class="tab" onclick="showCompletedTasks()">Completed</button>
+            <button class="tab" onclick="showPendingTasks()">Pending</button>
+        </div>
+        <ul id="taskList">
+        </ul>
+    </div>
 
 <script src="script.js"></script>
 </body>
