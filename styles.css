@@ -28,3 +28,23 @@ button {
 ul {
     list-style-type: none;
 }
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tabs button {
+    padding: 8px 15px;
+    margin: 0 5px;
+}
+
+.tabs button:focus {
+    outline: none;
+}
+
+.task-delete-button {
+    width: 60px;
+    margin-left: 10px;
+}
